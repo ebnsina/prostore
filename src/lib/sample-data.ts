@@ -103,9 +103,6 @@ const sampleData = {
       banner: null,
     },
   ],
-} as const;
-
-export type SampleData = typeof sampleData;
-export type Product = SampleData["products"][0];
+};
 
 export default sampleData;

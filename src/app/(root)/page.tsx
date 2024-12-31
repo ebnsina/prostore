@@ -5,6 +5,7 @@ export default async function HomePage() {
   return (
     <div>
       <div className="container mx-auto py-10">
+        {/* eslint-disable-next-line */}
         <ProductList
           title="New Arrival"
           limit={4}

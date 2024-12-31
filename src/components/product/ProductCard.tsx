@@ -1,4 +1,4 @@
-import { Product } from "@/lib/sample-data";
+import { Product } from "@/lib/types";
 import Link from "next/link";
 import Rating from "../rating/Rating";
 import Badge from "../shared/Badge";
@@ -18,6 +18,7 @@ export default function ProductCard({ item }: Props) {
       key={item.slug}
       className="bg-white border border-slate-100 hover:border-cyan-500 rounded-lg overflow-hidden transition-transform transform hover:scale-105 flex flex-col"
     >
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={item.images[0]}
         alt={item.name}
